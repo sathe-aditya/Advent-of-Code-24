@@ -21,8 +21,8 @@ void readfile(vector<int>& left, vector<int>& right){
         right.push_back(num2);
     }
 }
-template <typename T, typename U>
-U map_get(const map<T, U>& m, const T& key, const U& fallback){
+template <typename K, typename V>
+V map_get(const map<K, V>& m, const K& key, const V& fallback){
     auto it = m.find(key);
     if (it != m.end()){
         return it->second;
